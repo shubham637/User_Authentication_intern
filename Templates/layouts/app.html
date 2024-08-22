@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+       /* Container for the registration box */
+.register-box {
+    max-width: 360px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Form styling */
+.register-box form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Input fields and button styling */
+.register-box input[type="text"],
+.register-box input[type="password"],
+.register-box input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.register-box input[type="text"]:focus,
+.register-box input[type="password"]:focus,
+.register-box input[type="email"]:focus {
+    border-color: #007BFF;
+}
+
+/* Submit button styling */
+.register-box input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.register-box input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link and button styling */
+.register-box span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.register-box span a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.register-box span a:hover {
+    text-decoration: underline;
+}
+
+/* Simple responsive adjustments */
+@media (max-width: 480px) {
+    .register-box {
+        padding: 15px;
+        margin: 20px;
+    }
+}
+
+
+<!--     Login Css  -->
+
+     body {
+        background-color: #f4f4f4;
+        font-family: 'Arial', sans-serif;
+    }
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .login-box {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    form {
+        margin-bottom: 15px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    input[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .text-center {
+        text-align: center;
+    }
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    </style>
+
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
